@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/3988e44910.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Meal Planner</title>
+        <link rel="icon" type="image/x-icon" href="./image/iconimg.jpg" width="100%" >
+        <script src="./App.js" defer></script>
+    </head>
+<body>
+     <!-- Header section -->
+     <header id="header">
+        <a href="#"><img src="./image/iconimg.jpg" class="logo" alt=""><span class="text">Meal Planner</span></a>
+        <div>
+            <ul id="nav-bar">
+                <li><a href="index.html" class="active">Recipes<i class="fa-solid fa-plus head-icon"></i></a></li>
+                <li><a href="shop.html">Course<i class="fa-solid fa-plus head-icon"></i></a></li>
+                <li><a href="blog.html">Season<i class="fa-solid fa-plus head-icon"></i></a></li>
+                <li><a href="about.html">Method<i class="fa-solid fa-plus head-icon"></i></a></li>
+                <li><a href="contact.html">Meal Prep<i class="fa-solid fa-plus head-icon"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </header>
+    <!-- DISPLAY__CONTAINER -->
+    <div class="display_container">
+    <!-- data form validation -->
+        <div class="form-header">
+            <h2>Put your diet on autopilot</h2>
+        </div>
+        <section class="form_details">
+            <form action="" class="form" id="form">
+                <div class="formDesign">
+                    <label>Height :</label>
+                    <input
+                    type="number"
+                    name="height" 
+                    id="height" 
+                    placeholder="Enter Height(in cm)" 
+                    autocomplete="off"
+                    minlength="0"
+                    maxlength="3"
+                    required
+                    >
+                </div>
+                <div class="formDesign">
+                    <label>Weight :</label>
+                    <input                
+                    type="number" 
+                    name="weight" 
+                    id="weight" 
+                    placeholder="Enter Weight(in Kg)"
+                    autocomplete="off"
+                    minlength="0"
+                    maxlength="3"
+                    required
+                    >
+                </div>
+                <div class="formDesign">
+                    <label>Age :</label>
+                    <input 
+                    type="number" 
+                    name="age" 
+                    id="age" 
+                    placeholder="Enter Age" 
+                    autocomplete="off"
+                    minlength="0"
+                    maxlength="3"
+                    required
+                    >
+                  
+                </div>
+                <div class="formDesign">
+                    <label>  
+                        Gender:   
+                        </label>  
+                        <br>  
+                        <select id="gender">
+                            <option value="">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                </div>
+                <div class="formDesign">
+                <label>  
+                    Physical Activity:   
+                </label><br>  
+                <select name="base" id="activity">
+                    <option>Activity Level</option>
+                    <option value="light">Light</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="active">Active</option>
+                </select>
+                </div>
+               <button type="submit" class="normal" id="submit-btn">Generate Meal</button>
+            </form>
+        </section>
+    <!-- meal card section  -->
+    <section class="meals__container d-flex flex-row d-flex flex-wrap justify-content-center align-items-center" id="meals__container">
+    </section>
+    <!-- Recipes table section -->
+    <section class="recipe__container" id="recipie__container">
+    </section>      
+</div>
+</body>
+</html>
+Foo
